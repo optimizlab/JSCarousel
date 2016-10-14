@@ -2,10 +2,10 @@
 Simple Java Script Carousel
 
 
-
 Version: 1.0.0<br>
 Author: Rachid HARAKAT<br>
 Author mail: rachidonline@gmail.com<br>
+
 
 
 MIT License
