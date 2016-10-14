@@ -6,10 +6,8 @@
  */
 
  (function() {
-
-  window.JSCarousel = JSCarousel || {};
   
- 	JSCarousel = function(args) {
+ 	window.JSCarousel = function(args) {
  		if(!args) return;
 		
  		this.carousel	= document.querySelector(args.carousel) || null;
