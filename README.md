@@ -1,11 +1,9 @@
 # JSCarousel
 Pure Java Script Carousel
 
-
-- Version: 1.0.0<br>
-- Author: Rachid HARAKAT<br>
-- Author mail: rachidonline@gmail.com<br>
-
+> Version: 1.0.0<br>
+> Author: Rachid HARAKAT<br>
+> Author mail: rachidonline@gmail.com<br>
 
 <h4>Simple implementation:</h4>
 <pre>
@@ -24,7 +22,6 @@ Pure Java Script Carousel
 </pre>
 
 <h4>MIT License:</h4>
-<br>
 Copyright (c) 2007-2016 RACHID HARAKAT.<br><br>
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
