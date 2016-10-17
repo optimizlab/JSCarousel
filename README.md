@@ -18,8 +18,8 @@ Pure Java Script Carousel
           autoPlay : 5, //In secondes
       });
       
-      /* Ex: Jump to slide 5 */
-      MyCarousel.goTo(5);
+/* Ex: Jump to slide 5 */
+MyCarousel.goTo(5);
 </pre>
 
 <h4>MIT License:</h4>
