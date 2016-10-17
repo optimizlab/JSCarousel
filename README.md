@@ -1,15 +1,30 @@
 # JSCarousel
-Simple Java Script Carousel
+Pure Java Script Carousel
 
 
-Version: 1.0.0<br>
-Author: Rachid HARAKAT<br>
-Author mail: rachidonline@gmail.com<br>
+- Version: 1.0.0<br>
+- Author: Rachid HARAKAT<br>
+- Author mail: rachidonline@gmail.com<br>
 
 
+<h4>Simple implementation:</h4>
+<pre>
+      var MyCarousel = new JSCarousel({
+          carousel  : '#carousel_container_id',
+          slide     : '.slides_class',
+          navButtons: '#navigation_menu_container_id',
+          btnIndex  : '#navigation_buttons_container_id',
+          btnNext   : '.navigation_button_next_class',
+          btnPrev   : '.navigation_button_prevue_class',
+          autoPlay : 5,
+      });
+      
+      /* Jump to slide 5 */
+      MyCarousel.goTo(5);
+</pre>
 
-MIT License
-<br><br>
+<h4>MIT License:</h4>
+<br>
 Copyright (c) 2007-2016 RACHID HARAKAT.<br><br>
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
