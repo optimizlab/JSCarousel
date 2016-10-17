@@ -13,8 +13,8 @@ Pure Java Script Carousel
           navButtons: '#navigation_menu_container_id',
           btnIndex  : '#navigation_buttons_container_id',
           btnNext   : '.navigation_button_next_class',
-          btnPrev   : '.navigation_button_prevue_class',
-          autoPlay : 5,
+          btnPrev   : '.navigation_button_preview_class',
+          autoPlay : 5, //In secondes
       });
       
       /* Jump to slide 5 */
