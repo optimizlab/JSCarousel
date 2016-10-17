@@ -6,8 +6,9 @@ Pure Java Script Carousel
 > Author mail: rachidonline@gmail.com<br>
 
 <h4>Simple implementation:</h4>
-<pre>
-      var MyCarousel = new JSCarousel({
+
+`<script src="Your/Script/Directory/JSCarousel.min.js"></script>`
+<pre>var MyCarousel = new JSCarousel({
           carousel  : '#carousel_container_id',
           slide     : '.slides_class',
           navButtons: '#navigation_menu_container_id',
@@ -17,7 +18,7 @@ Pure Java Script Carousel
           autoPlay : 5, //In secondes
       });
       
-      /* Jump to slide 5 */
+      /* Ex: Jump to slide 5 */
       MyCarousel.goTo(5);
 </pre>
 
