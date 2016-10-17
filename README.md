@@ -1,9 +1,10 @@
 # JSCarousel
 Pure Java Script Carousel
 
-> Version: 1.0.0<br>
-> Author: Rachid HARAKAT<br>
-> Author mail: rachidonline@gmail.com<br>
+> Version : 1.0.0<br>
+> Author : Rachid HARAKAT<br>
+> Author Mail : rachidonline@gmail.com<br>
+> Project Link : https://optimizlab.github.io/JSCarousel/
 
 <h4>Simple implementation:</h4>
 
