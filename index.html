@@ -74,12 +74,14 @@
           box-shadow: 1px 1px 8px 0px white;
         }
         .nav_button{
-          border: none;
           width: 18px;
           height: 50px;
           margin: 0;
           padding: 0;
-          float:left;          
+          top: 200px;
+          position: absolute;
+          margin-left: 100px;
+          border: 1px solid;          
         }
         .navigation_button_preview_class{
             background: url(https://redislabs.com/wp-content/plugins/gdquotes/img/left.png) no-repeat;          
@@ -88,6 +90,8 @@
             background: url(https://redislabs.com/wp-content/plugins/gdquotes/img/right.png) no-repeat;          
         }        
       </style>
+      <!--Button Next -->
+      <button class="nav_button navigation_button_preview_class"></button>
       <!-- Carousel out side countainer -->
       <div id="carousel_outside_container">       
         <!-- Carousel Container  (will be transitioned in track-->
@@ -108,14 +112,13 @@
           </div>        
         </div>
       </div>
-      
-      <!-- Contorols Button -->
-      <div id="navigation_menu_container_id">
-        <button class="nav_button navigation_button_preview_class"></button>
+      <!--Button Next -->
+      <button class="nav_button navigation_button_next_class"></button>
+      <!-- Contorols Buttons -->
+      <div id="navigation_menu_container_id">        
         <ul id="navigation_buttons_container_id">
           <!--JS generated-->
         </ul>
-        <button class="nav_button navigation_button_next_class"></button>
        </div>    
 
       
