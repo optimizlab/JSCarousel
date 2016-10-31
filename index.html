@@ -228,22 +228,22 @@
 &lt;/div&gt;
 </pre>       
 
-<h6 class="scrptinfo">Setup the carousel configurations:</h6>    
+<h6 class="scrptinfo">Setup the carousel configuration:</h6>    
 <pre>
-        window.onload = function () {
-              var MyCarousel = new JSCarousel({
-                  carousel  : '#carousel_container_id',
-                  slide     : '.slide_class',
-                  navButtons: '#navigation_menu_container_id',
-                  btnIndex  : '#navigation_buttons_container_id',
-                  btnNext   : '.navigation_button_next_class',
-                  btnPrev   : '.navigation_button_preview_class',
-                  autoPlay : 10,
-              });
-              
-              /* Jump to slide 1 */
-              MyCarousel.goTo(1);
-            }           
+  window.onload = function () {
+      var MyCarousel = new JSCarousel({
+          carousel  : '#carousel_container_id',
+          slide     : '.slide_class',
+          navButtons: '#navigation_menu_container_id',
+          btnIndex  : '#navigation_buttons_container_id',
+          btnNext   : '.navigation_button_next_class',
+          btnPrev   : '.navigation_button_preview_class',
+          autoPlay : 10,
+      });
+
+      /* Jump to slide 1 */
+      MyCarousel.goTo(1);
+  }           
 </pre>
 
 <h3>
