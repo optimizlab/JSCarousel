@@ -128,7 +128,16 @@
         }
         .green:focus, .green:focus:hover {
             border-color: #51a7e8;
-        }       
+        }
+        h6.scrptinfo{
+            margin-bottom: 2px;
+            margin-top: 2px;
+            color: gray;
+            background-color: #FFF9C4;
+            border-radius: 3px;
+            padding: 2px 5px;
+            display: inline-block;          
+        }
       </style>
       <!-- Carousel out side countainer -->
       <div id="carousel_outside_container">       
@@ -186,11 +195,11 @@
       <h3>
 <a id="simple-implementation" class="anchor" href="#simple-implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simple implementation.</h3>
 
-<h6>Import the js script</h6>
+<h6 class="scrptinfo">Import the script file:</h6>
 <pre>
   &lt;script src="Your/Script/Directory/JSCarousel.min.js"&gt;&lt;/script&gt;
 </pre>
-<h6>Carousel HTML</h6>
+<h6 class="scrptinfo">Build the HTML content:</h6>
 <pre>
 # Carousel:
   &lt;div id="carousel_outside_container"&gt;       
@@ -219,7 +228,7 @@
 &lt;/div&gt;
 </pre>       
 
-<h6>Configurate and run the carousel</h6>      
+<h6 class="scrptinfo">Setup the carousel configurations:</h6>    
 <pre>
         window.onload = function () {
               var MyCarousel = new JSCarousel({
@@ -238,7 +247,8 @@
 </pre>
 
 <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+  <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact
+</h3>
 
 <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/optimizlab">contact optimizLab support</a> and we’ll help you sort it out.</p>
 
