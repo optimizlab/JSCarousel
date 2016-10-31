@@ -185,11 +185,42 @@
     <section class="main-content">
       <h3>
 <a id="simple-implementation" class="anchor" href="#simple-implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simple implementation.</h3>
+
+<h6>Import the js script</h6>
 <pre>
-  <code>&lt;script src="Your/Script/Directory/JSCarousel.min.js"&gt;&lt;/script&gt;</code>
-</pre>      
+  &lt;script src="Your/Script/Directory/JSCarousel.min.js"&gt;&lt;/script&gt;
+</pre>
+<h6>Carousel HTML</h6>
 <pre>
-  <code>
+# Carousel:
+  &lt;div id="carousel_outside_container"&gt;       
+    &lt;div id="carousel_container_id"&gt;
+      &lt;!-- Slide 1 --&gt;
+      &lt;div class="slide_class"&gt;
+          ....
+      &lt;/div&gt;
+      &lt;!-- Slide 2 --&gt;        
+      &lt;div class="slide_class"&gt;
+          ....
+      &lt;/div&gt;
+      ... Other slides'
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+# Controls
+&lt;div id="navigation_menu_container_id"&gt; 
+  &lt;!--Button Next --&gt;
+  &lt;button class="fa fa-chevron-left nav_button navigation_button_preview_class"&gt;&lt;/button&gt;
+  &lt;ul id="navigation_buttons_container_id"&gt;
+    &lt;!--JS generated LI and Buttons--&gt;
+  &lt;/ul&gt;
+  &lt;!--Button Next --&gt;
+  &lt;button class="fa fa-chevron-right nav_button navigation_button_next_class"&gt;&lt;/button&gt; 
+&lt;/div&gt;
+</pre>       
+
+<h6>Configurate and run the carousel</h6>      
+<pre>
         window.onload = function () {
               var MyCarousel = new JSCarousel({
                   carousel  : '#carousel_container_id',
@@ -200,10 +231,10 @@
                   btnPrev   : '.navigation_button_preview_class',
                   autoPlay : 10,
               });
+              
               /* Jump to slide 1 */
               MyCarousel.goTo(1);
-            }
-  </code>            
+            }           
 </pre>
 
 <h3>
