@@ -1,5 +1,5 @@
 # JSCarousel
-Pure Java Script Carousel
+<h3>Pure Javascript Carousel</h3>
 
 > Version : 1.0.0<br>
 > Author : Rachid HARAKAT<br>
