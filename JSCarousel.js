@@ -93,9 +93,8 @@
         addGoToPreviewEventListener(this.btnPrev, this);
     };
     JSCarousel.prototype.setAutoPlay = function () {
-        var _ = this;
         setInterval(function () {
-            _.goToNext();
+            this.goToNext();
         }, this.autoPlay * 1000);
     };
     JSCarousel.prototype.goTo = function (pos) {
@@ -139,13 +138,13 @@
         if (index === this.activeSlideId) {
             this.slides[index].setAttribute('data-active', true);
             if (this.navButtons) {
-                //Active anchor button
+                //Activate the anchor button
                 this.anchorButtons[this.activeSlideId].className += ' active';
             }
         } else {
             this.slides[index].setAttribute('data-active', false);
             if (this.navButtons) {
-                //Disactive anchor button
+                //Deactivate the anchor button
                 this.anchorButtons[index].setAttribute('class', 'anchor');
             }
         }
@@ -200,6 +199,6 @@
             };
         }
     }
-
+        
     window.JSCarousel = JSCarousel || {};
 })();
