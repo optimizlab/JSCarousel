@@ -8,7 +8,9 @@
 
 
 (function () {
-
+    
+    //TODO : Optimize and improve the script.
+    
     function JSCarousel(args) {
         if (!args)
             return;
@@ -35,11 +37,8 @@
     JSCarousel.prototype.init = function () {
         /*
          * First our slider is linear and horizontal
-         * Make slide container fite to slides with			
+         * Make slides container fit to slides width		
          **/
-
-//        console.log(this);
-
         this.setContainerWidth();
 
         /*
@@ -57,7 +56,7 @@
         var i = 0;
         for (i; i < this.slides.length; i++) {
             var style = this.slides[i].currentStyle || window.getComputedStyle(this.slides[i]),
-                    width = this.slides[i].offsetWidth, // or use style.width
+                    width = this.slides[i].offsetWidth, // Or just use style.width
                     margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight),
                     padding = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight),
                     border = parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth);
@@ -68,11 +67,10 @@
     };
     JSCarousel.prototype.setAnchorsButton = function () {
         /*
-         * Geven container as a ul
+         * Geven container as an HTML ul
          * Creating li > button (<button data-index="7" type="button"></button>)
          **/
         for (var i = 1; i <= this.slides.length; i++) {
-
             var mLi = document.createElement('li');
             var mBut = document.createElement('button');
             mBut.innerHTML = i;
@@ -116,8 +114,6 @@
     JSCarousel.prototype.goToNext = function () {
         var pos = this.activeSlideId + 1;
 
-//        console.log('goToNext: ' + pos);
-
         if (this.activeSlideId >= this.slides.length - 1) {
             pos = 1;
         } else {
@@ -129,9 +125,7 @@
     };
     JSCarousel.prototype.goToPreview = function () {
         var pos = this.activeSlideId;
-
-//        console.log('goToPreview: ' + pos);
-
+        
         if (pos <= 0) {
             pos = this.slides.length;
         } else {
