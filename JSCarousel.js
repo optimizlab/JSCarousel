@@ -48,7 +48,7 @@
             this.setAnchorsButton();
         }
         if (this.autoPlay > 0) {
-            this.setAutoPlay();
+            this.setAutoPlay(this);
         }
 
     };
@@ -92,9 +92,9 @@
         addGoToNextEventListener(this.btnNext, this);
         addGoToPreviewEventListener(this.btnPrev, this);
     };
-    JSCarousel.prototype.setAutoPlay = function () {
+    JSCarousel.prototype.setAutoPlay = function (parent) {
         setInterval(function () {
-            this.goToNext();
+            parent.goToNext();
         }, this.autoPlay * 1000);
     };
     JSCarousel.prototype.goTo = function (pos) {
